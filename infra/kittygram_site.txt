@@ -1,5 +1,5 @@
 IP: 51.250.26.175;
-name_taski: https://ashaminataski.ddns.net;;
+name_taski: https://ashaminataski.free.nf;
 name_kittygram: https://ashaminakittygram.ddns.net;
 login: superuser;
-password: Anitazoy1!
+password: Anitazoy1!;
