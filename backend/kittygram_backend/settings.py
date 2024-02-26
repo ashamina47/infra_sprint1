@@ -1,5 +1,20 @@
 import os
 from pathlib import Path
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+# Скопируйте DSN из вашего личного кабинета на Sentry: 
+# Settings → Projects → <ваш-проект> → Client Keys (DSN).
+sentry_sdk.init(
+    # В этой переменной будет значение для вашего проекта.
+    dsn="https://862a7a5a728af626c3af89f398f05521@o4506815032328192.ingest.sentry.io/4506815050678272",
+    integrations=[
+        DjangoIntegration(),
+    ],
+    traces_sample_rate=1.0,
+    send_default_pii=True
+)
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
